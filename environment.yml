@@ -1,0 +1,6 @@
+name: cv
+dependencies:
+  - pip
+  - python=3
+  - pip:
+      - -r file:requirements.txt
