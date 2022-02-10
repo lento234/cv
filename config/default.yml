@@ -1,0 +1,52 @@
+from: markdown+tex_math_single_backslash+tex_math_dollars
+
+# Variables
+variables:
+  documentclass: article
+  autoEqnLabels: true
+  link-citations: true
+  lang: en-US
+  colorlinks: true
+  geometry: [a4paper, left=3cm, right=3cm, top=3cm, bottom=2cm, marginparwidth=1.75cm]
+
+#urlcolor: "blue"
+#allcolor: "red"
+#
+# Formatting
+reference-links: true
+number-sections: true
+table-of-contents: true
+
+# General settings
+standalone: true
+self-contained: false
+
+# # Filters
+filters:
+- config/filters/abstract-to-meta.lua
+- config/filters/scholarly-metadata.lua
+- config/filters/author-info-blocks.lua
+
+# Images
+default-image-extension: ".png"
+dpi: 300
+
+# Latex
+pdf-engine: xelatex
+#include-in-header: config/header.tex
+
+# HTML
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"  
+
+# References
+cite-method: citeproc
+csl: config/apa.csl
+#csl: config/chicago-author-date.csl
+reference-doc: config/template.docx
+#reference-doc: config/template-draft.docx
+
+# Compilations
+fail-if-warnings: true
+verbosity: INFO
