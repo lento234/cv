@@ -17,7 +17,7 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
 * Programming in `Python`
 * Administration of HPC system
 
-# Technical skills 
+# Technical skills
 
 ## Scientific
 

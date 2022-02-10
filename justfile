@@ -10,7 +10,7 @@ help:
     @just --list
 
 # Make pdf from markdown
-pdf: 
+pdf:
 	{{ CC }} {{ FILENAME }}.md \
 	{{ CCFLAGS }} \
 	--to=latex \
