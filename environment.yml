@@ -4,5 +4,6 @@ name: cv
 dependencies:
   - pip
   - python=3
+  - just
   - pip:
     - -r requirements.txt
