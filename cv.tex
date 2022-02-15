@@ -16,7 +16,7 @@
 \documentclass[11pt, a4paper]{awesome-cv}
 
 % Configure page margins with geometry
-\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\geometry{left=2cm, top=2cm, right=2cm, bottom=2cm, footskip=.5cm}
 
 % Specify the location of the included fonts
 \fontdir[fonts/]
@@ -26,20 +26,21 @@
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
 % \colorlet{awesome}{awesome-skyblue}
 % Uncomment if you would like to specify your own color
-\definecolor{awesome}{HTML}{5E81AC}
+\definecolor{awesome}{HTML}{5e81ac}
 
 % Colors for text
 % Uncomment if you would like to specify your own color
-% \definecolor{darktext}{HTML}{2E3440}
-% \definecolor{text}{HTML}{3B4252}
-% \definecolor{graytext}{HTML}{4C566A}
-% \definecolor{lighttext}{HTML}{D8DEE9}
+\definecolor{darktext}{HTML}{2e3440}
+% \definecolor{text}{HTML}{3b4252}
+% \definecolor{graytext}{HTML}{2e3440}
+% \definecolor{lighttext}{HTML}{4c566a}
 
 % Set false if you don't want to highlight section with awesome color
 \setbool{acvSectionColorHighlight}{true}
 
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+\newcommand{\sep}{$\cdot$~}
 
 %===============================================================================
 %   PERSONAL INFORMATION
@@ -90,6 +91,7 @@
 %===========================================================================
 %   SUMMARY
 %===========================================================================
+\vspace{.4cm}
 
 \cvsection{Summary}
 
@@ -109,6 +111,8 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
 \end{cventries}
 
 \end{cvparagraph}
+
+\vspace{.3cm}
 
 %===========================================================================
 %   ACADEMIC & PROFESSIONAL EXPERIENCE
@@ -133,16 +137,27 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
     }
 
   \cventry
-    {Scientific Assistant} % Job title
-    {ETH Zurich} % Organization
-    {Z\"urich, Switzerland} % Location
-    {May 2015 - May 2019} % Date(s)
+    {Scientific Assistant}
+    {ETH Zurich}
+    {Z\"urich, Switzerland}
+    {May 2015 - May 2019}
     {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
+      \begin{cvitems}
         \item {Numerical and experimental research at Empa.}
         \item {Neutron radiography at Paul Scherrer Institute (PSI).}
         \item {Teaching assistant for Application of CFD in buildings.}
         \item {Supervision of master thesis project: \textit{Praharsh Pai Raikar}.}
+      \end{cvitems}
+    }
+
+    \cventry
+    {Research Intern}
+    {Shell Global Solutions}
+    {Rijswijk, The Netherlands}
+    {Sep. 2012 - Feb. 2013}
+    {
+      \begin{cvitems}
+        \item {Investigating the combustion of hydrogen rich Syngas fuel in gas turbine.}
       \end{cvitems}
     }
 
@@ -173,12 +188,12 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
     }
 
   \cventry
-    {M.Sc. in Aerospace Engineering} % Degree
-    {TU Delft (Delft University of Technology)} % Institution
-    {Delft, The Netherlands} % Location
-    {Sep. 2011 - Dec. 2014} % Date(s)
+    {M.Sc. in Aerospace Engineering}
+    {TU Delft (Delft University of Technology)}
+    {Delft, The Netherlands}
+    {Sep. 2011 - Dec. 2014}
     {
-      \begin{cvitems} % Description(s) bullet points
+      \begin{cvitems}
         \item {\textbf{Major}: Aerodynamics and Wind Engineering}
         \item {\textbf{Thesis}: Hybrid Eulerian-Lagrangian Vortex Particle Method: Developing a fast and accurate numerical method for the application of Vertical-Axis Wind Turbine (VAWT).}
         \item {\textbf{Advisor}: Dr. ir. Carlos Sim\~ao Ferreira}
@@ -187,12 +202,12 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
     }
 
   \cventry
-    {B.Sc in Aerospace Engineering} % Degree
-    {TU Delft (Delft University of Technology)} % Institution
-    {Delft, The Netherlands} % Location
-    {Sep. 2008 - Aug. 2011} % Date(s)
+    {B.Sc in Aerospace Engineering}
+    {TU Delft (Delft University of Technology)}
+    {Delft, The Netherlands}
+    {Sep. 2008 - Aug. 2011}
     {
-      \begin{cvitems} % Description(s) bullet points
+      \begin{cvitems}
         \item {\textbf{Minor}: Wind Energy and Sustainability}
         \item {\textbf{Thesis}: Designing a multi-purpose autonomous aerial monitoring aircraft.}
         \item {Design a UAV that can cope with severe weather conditions, while performing a variety of sensing and monitoring tasks.}
@@ -205,6 +220,7 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
 %===========================================================================
 %   EXTRACURRICULAR ACTIVITIES
 %===========================================================================
+\newpage
 
 \cvsection{Extracurricular Activities}
 
@@ -223,12 +239,12 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
     }
 
   \cventry
-    {Powertrain Engineer} % Degree
-    {TU Delft Formula Student} % Institution
-    {Delft, The Netherlands} % Location
-    {Sep. 2009 - Jul. 2010} % Date(s)
+    {Powertrain Engineer}
+    {TU Delft Formula Student}
+    {Delft, The Netherlands}
+    {Sep. 2009 - Jul. 2010}
     {
-      \begin{cvitems} % Description(s) bullet points
+      \begin{cvitems}
         \item {In charge of designing the powertrain intake system.}
         \item {Design and production of the carbon-fiber intake system.}
         \item {\textit{2010 Formula Student Germany Champion.}}
@@ -247,37 +263,37 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
 \begin{cvskills}
   \cvskill
     {CAD}
-    {Blender, CATIA}
+    {Blender \sep CATIA}
   \cvskill
     {CFD}
-    {FEniCS, Fluent, OpenFOAM}
+    {FEniCS \sep Fluent \sep OpenFOAM}
   \cvskill
     {DevOps}
-    {Ansible, AWS (EC2), TravisCI, Docker, Git, Grafana, Kubernetes, Nginx, Vagrant}
+    {Ansible \sep AWS (EC2) \sep Travis CI \sep Docker \sep Git \sep Grafana \sep Kubernetes \sep Nginx \sep Vagrant}
   \cvskill
     {Database}
-    {InfluxDB, MariaDB}
+    {InfluxDB \sep MariaDB}
   \cvskill
     {Embedded Platform}
-    {Arduino, NVIDIA Jetson Nano, Raspberry Pi}
+    {Arduino \sep NVIDIA Jetson Nano \sep Raspberry Pi}
   \cvskill
     {Markup / Typesetting}
-    {Jinja, LaTeX, Markdown, Vim}
+    {Jinja \sep LaTeX \sep Markdown \sep MkDocs \sep Vim}
   \cvskill
     {ML Libraries}
-    {PyTorch, Scikit-learn}
+    {PyTorch \sep Scikit-learn}
   \cvskill
     {OS}
-    {Linux (RedHat, Debian), Mac, Windows}
+    {Linux (Arch Linux, Debian, RedHat) \sep MacOS \sep Windows}
   \cvskill
     {Programming}
-    {C++, MATLAB, Python, R, shell}
+    {C++ \sep MATLAB \sep Python \sep R \sep shell}
   \cvskill
     {Python Libraries}
-    {Cupy, Cython, Dask, H5py, Matplotlib, MPI4py, Numba, NumPy, Pandas, SciPy, Scikit-image}
+    {Cupy \sep Cython \sep Dask \sep H5py \sep Matplotlib \sep MPI4py \sep Numba \sep NumPy \sep Pandas \sep SciPy \sep Scikit-image}
   \cvskill
     {Web development} % Category
-    {CSS, Hugo, HTML5}
+    {CSS \sep Hugo \sep HTML5}
 \end{cvskills}
 
 \cvsection{Languages}
@@ -301,7 +317,8 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
     {13th Symposium on Urban Environment} % Event
     {Seattle, USA} % Location
     {2017} % Date(s)
-  \cvhonor
+
+    \cvhonor
     {Young Best Researcher} % Award
     {4th International Conference on Countermeasures to Urban Heat Island} % Event
     {Singapore} % Location
@@ -320,26 +337,28 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
   {Journals} % Title
   {
     \begin{cvitems}
-      \item {\textbf{Manickathan, L.}, Mucignat, C., Lunati, I.: Random displacement training for fluid flow motion estimation. 2022. (\textit{in preparation})}
-      \item {\textbf{Manickathan, L.}, Defraeye, T., Carl, S., Richter, H., Allegrini, J., Derome, D., \& Carmeliet, J. (2022). A study on diurnal microclimate hysteresis and plant morphology of a Buxus sempervirens using PIV, infrared thermography, and X-ray imaging. \textit{Agricultural and Forest Meteorology} 313, 108722.}
-      \item {\textbf{Manickathan, L.}, Defraeye, T., Allegrini, J., Derome, D., \& Carmeliet, J. (2018). Parametric study of the influence of environmental factors and tree properties on the transpirative cooling effect of trees. \textit{Agricultural and Forest Meteorology} 248, 259-274}
-      \item {\textbf{Manickathan, L.}, Defraeye, T., Allegrini, J., Derome, D., \& Carmeliet, J. (2018). Comparative study of flow field and drag coefficient of model and small natural trees in a wind tunnel. \textit{Urban Forestry \& Urban Greening}, 35(December 2017), 230–239.}
+      \item {\textbf{Manickathan, L.}, Mucignat, C., Lunati, I. (2022). Random displacement training for fluid flow motion estimation. {\bodyfontlight(\textit{in preparation})}}
+      \item {\textbf{Manickathan, L.}, Defraeye, T., Carl, S., Richter, H., Allegrini, J., Derome, D., \& Carmeliet, J. (2022). A study on diurnal microclimate hysteresis and plant morphology of a Buxus sempervirens using PIV, infrared thermography, and X-ray imaging. {\bodyfontlight\textit{Agricultural and Forest Meteorology 313}, 108722.}}
+      \item {\textbf{Manickathan, L.}, Defraeye, T., Allegrini, J., Derome, D., \& Carmeliet, J. (2018). Parametric study of the influence of environmental factors and tree properties on the transpirative cooling effect of trees. {\bodyfontlight\textit{Agricultural and Forest Meteorology, 248}, 259-274.}}
+      \item {\textbf{Manickathan, L.}, Defraeye, T., Allegrini, J., Derome, D., \& Carmeliet, J. (2018). Comparative study of flow field and drag coefficient of model and small natural trees in a wind tunnel. {\bodyfontlight\textit{Urban Forestry \& Urban Greening, 35}, 230–239.}}
     \end{cvitems}
   }
+
   \pubentry
   {Preprints}
   {
     \begin{cvitems}
-      \item {Palha, A., \textbf{Manickathan, L.}, Ferreira, C. S., \& van Bussel, G. (2015). A hybrid Eulerian-Lagrangian flow solver.}
+      \item {Palha, A., \textbf{Manickathan, L.}, Ferreira, C. S., \& van Bussel, G. (2015). A hybrid Eulerian-Lagrangian flow solver. {\bodyfontlight\textit{arXiv preprint arXiv:1505.03368.}}}
     \end{cvitems}
   }
+
   \pubentry
   {Conferences}
   {
     \begin{cvitems}
-      \item {\textbf{Manickathan, L.}, Kubilay, A., Defraeye, T., Allegrini, J., Derome, D., \& Carmeliet, J.: Integrated CFD vegetation model with soil-plant-air water dynamics for studying the cooling potential of vegetation in an urban street canyon. \textit{10th International Conference on Urban Climate/14th Symposium on the Urban Environment}, New York, NY, USA, 6 - 10 August 2018.}
-      \item {\textbf{Manickathan, L.}, Defraeye, T., Allegrini, J., Derome D., \& Carmeliet, J.: Conjugate Vegetation Model for Evaluating Evapotranspirative Cooling in Urban Environment. \textit{97th AMS Annual Meeting}, Seattle, WA, USA, 2017.}
-      \item {\textbf{Manickathan, L.}, Defraeye, T., Allegrini, J., Derome, D., \& Carmeliet, J.: Aerodynamic characterization of model vegetation by wind tunnel experiments. \textit{4th International Conference on Countermeasures to Urban Heat Island}, Singapore, 2016.}
+      \item {\textbf{Manickathan, L.}, Kubilay, A., Defraeye, T., Allegrini, J., Derome, D., \& Carmeliet, J.: Integrated CFD vegetation model with soil-plant-air water dynamics for studying the cooling potential of vegetation in an urban street canyon. {\bodyfontlight\textit{10th International Conference on Urban Climate/14th Symposium on the Urban Environment}, New York, NY, USA, 6 - 10 August 2018.}}
+      \item {\textbf{Manickathan, L.}, Defraeye, T., Allegrini, J., Derome D., \& Carmeliet, J.: Conjugate Vegetation Model for Evaluating Evapotranspirative Cooling in Urban Environment. {\bodyfontlight\textit{97th AMS Annual Meeting}, Seattle, WA, USA, 2017.}}
+      \item {\textbf{Manickathan, L.}, Defraeye, T., Allegrini, J., Derome, D., \& Carmeliet, J.: Aerodynamic characterization of model vegetation by wind tunnel experiments. {\bodyfontlight\textit{4th International Conference on Countermeasures to Urban Heat Island}, Singapore, 2016.}}
     \end{cvitems}
   }
 
