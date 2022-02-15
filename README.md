@@ -1,21 +1,23 @@
 ---
-name: Lento Manickathan
+title: "CV"
+firstname: Lento
+surname: Manickathan
+website: https://manickathan.ch
+email: lento.manickathan@gmail.com
 ---
 
 # Profile
 
 Aerospace Engineer and PhD in mechanical engineering with expertise in high-performance computing and machine learning. A brief summary of skills:
 
+* CFD simulation with `OpenFOAM`
+* PIV experimental skills
+* Machine learning with `PyTorch`
+* Cloud computing, GPU computing
+* Programming in `Python`
+* Administration of HPC system
 
- * CFD simulation with `OpenFOAM`
- * PIV experimental skills
- * Machine learning with `PyTorch`
- * Cloud computing, GPU computing
- * Programming in `Python`
- * Administration of HPC system
-
-
-# Technical skills 
+# Technical skills
 
 ## Scientific
 
@@ -41,7 +43,6 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
 # Academic & professional experience
 
 Postdoctoral researcher at `Empa`
-
 : (June 2019 - Present), Zurich, Switzerland
   * Application of machine learning in quantitative flow visualization.
   * Supervised and unsupervised optical flow algorithms for PIV.
@@ -55,12 +56,3 @@ Scientific Assistant at `ETH Zurich`
   * Neutron radiography at Paul Scherrer Institut (PSI).
   * Teaching assistant for Application of CFD in buildings.
   * Supervision of master thesis project: Praharsh Pai Raikar
-
-  
-# Education
-
-# Personal Details
-
- * Website: [https://manickathan.ch](https://manickathan.ch)
- * Email: [lento@manickathan.ch](lento@manickathan.ch]
-
