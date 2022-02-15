@@ -1,11 +1,11 @@
 <div align="center">
 
-# [CV](cv.pdf)
+# [Curriculum Vitae](cv.pdf)
 
 ![CC BY 4.0](https://img.shields.io/github/license/lento234/lento234.github.io?style=flat-square&color=blue)
 ![Last updated](https://img.shields.io/github/last-commit/lento234/cv)
 
-***CV hosted at `github`***
+***Personal CV***
 
 </div>
 
