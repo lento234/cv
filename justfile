@@ -15,6 +15,7 @@ build:
 	-i -w "/doc" \
 	-v "$PWD":/doc \
 	{{ DOCKERIMAGE }} {{ CC }}  -output-directory={{ EXPORT_DIR }} {{ FILENAME }}.tex
+	@mv {{ EXPORT_DIR }}/{{ FILENAME }}.pdf .
 
 # Clean up
 clean:
@@ -22,4 +23,4 @@ clean:
 
 # Open PDF
 open:
-	@xdg-open {{ EXPORT_DIR }}/{{ FILENAME }}.pdf
+	@xdg-open {{ FILENAME }}.pdf
