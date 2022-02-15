@@ -1,5 +1,5 @@
 CC := "xelatex"
-DOCKERIMAGE := "thomasweise/texlive"
+DOCKERIMAGE := "mrlento234/xelatex"
 EXPORT_DIR := "build"
 FILENAME := "cv"
 
