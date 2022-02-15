@@ -6,4 +6,4 @@ dependencies:
   - python=3
   - just
   - pip:
-    - -r requirements.txt
+    - pre-commit
