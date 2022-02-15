@@ -1,0 +1,330 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+% \colorlet{awesome}{awesome-skyblue}
+% Uncomment if you would like to specify your own color
+\definecolor{awesome}{HTML}{5E81AC}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{2E3440}
+% \definecolor{text}{HTML}{3B4252}
+% \definecolor{graytext}{HTML}{4C566A}
+% \definecolor{lighttext}{HTML}{D8DEE9}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+%===============================================================================
+%===============================================================================
+%   PERSONAL INFORMATION
+%===============================================================================
+%===============================================================================
+
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{./examples/profile}
+% \photo[circle,edge,right]{profile.png}
+\name{Lento}{Manickathan}
+\position{Postdoctoral Researcher{\enskip\cdotp\enskip}Aerospace Engineer}
+\address{Geissbergstrasse 22, 8200 Schaffhausen, Switzerland}
+
+\mobile{(+41) 78 917 8121}
+\email{lento.manickathan@gmail.com}
+\homepage{https://manickathan.ch}
+\github{lento234}
+% \linkedin{lento-manickathan}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{b8RcAAAAJ}{Google Scholar}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+\extrainfo{Swiss C permit}
+
+% \quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Lento Manickathan}
+  %   {Lento Manickathan~~~·~~~CV}
+  {\thepage}
+
+
+%===========================================================================
+%===========================================================================
+%   SUMMARY
+%===========================================================================
+%===========================================================================
+
+\cvsection{Summary}
+
+\begin{cvparagraph}
+
+Aerospace Engineer and PhD in mechanical engineering with expertise in high-performance computing and machine learning. Keen at developing skills in computer vision techniques. A brief summary of expertise:
+
+\begin{cventries}
+    \begin{cvcitems}
+        \item {CFD simulation with OpenFOAM}
+        \item {PIV experimental skills}
+        \item {Machine learning with PyTorch}
+        \item {Cloud computing, GPU computing}
+        \item {Programming in Python}
+        \item {Administration of HPC system}
+    \end{cvcitems}
+\end{cventries}
+
+\end{cvparagraph}
+
+%===========================================================================
+%===========================================================================
+%   ACADEMIC & PROFESSIONAL EXPERIENCE
+%===========================================================================
+%===========================================================================
+
+\cvsection{Academic \& Professional Experience}
+
+\begin{cventries}
+
+  \cventry
+    {Postdoctoral researcher} % Job title
+    {Empa} % Organization
+    {Z\"urich, Switzerland} % Location
+    {Jun. 2019 - Present} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Application of machine learning in quantitative flow visualization.}
+        \item {Supervised optical flow algorithms for PIV.}
+        \item {Convolutional Neural Networks (CNN) in PyTorch.}
+        \item {Additional responsibilities: Lab HPC support, Fluid Tunnel support, Deputy Laser safety officer (LSO), and Deputy data management.}
+      \end{cvitems}
+    }
+
+  \cventry
+    {Scientific Assistant} % Job title
+    {ETH Zurich} % Organization
+    {Z\"urich, Switzerland} % Location
+    {May 2015 - May 2019} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Numerical and experimental research at Empa.}
+        \item {Neutron radiography at Paul Scherrer Institute (PSI).}
+        \item {Teaching assistant for Application of CFD in buildings.}
+        \item {Supervision of master thesis project: \textit{Praharsh Pai Raikar}.}
+      \end{cvitems}
+    }
+
+\end{cventries}
+
+
+%===========================================================================
+%===========================================================================
+%   EDUCATION
+%===========================================================================
+%===========================================================================
+
+\cvsection{Education}
+
+\begin{cventries}
+
+  \cventry
+    {Ph.D. in Mechanical Engineering} % Degree
+    {ETH Zurich} % Institution
+    {Z\"urich, Switzerland} % Location
+    {May 2015 - Jun. 2019} % Date(s)
+    {
+      \begin{cvitems} % Description(s) bullet points
+        \item {\textbf{Thesis}: Impact of Vegetation on Urban Microclimate.}
+        \item {\textbf{Advisor}: Prof. Dr. Jan Carmeliet}
+        \item {Development of a coupled soil-vegetation-air-radiation model in C++ within the OpenFOAM library.}
+        \item {Wind tunnel study of flow past model and natural plants using PIV.}
+        \item {X-ray tomography of small natural plants and high-performance big data analysis in python (HDF5, scikit-image, Dask, Numba).}
+      \end{cvitems}
+    }
+
+  \cventry
+    {M.Sc. in Aerospace Engineering} % Degree
+    {TU Delft (Delft University of Technology)} % Institution
+    {Delft, The Netherlands} % Location
+    {Sep. 2011 - Dec. 2014} % Date(s)
+    {
+      \begin{cvitems} % Description(s) bullet points
+        \item {\textbf{Major}: Aerodynamics and Wind Engineering}
+        \item {\textbf{Thesis}: Hybrid Eulerian-Lagrangian Vortex Particle Method: Developing a fast and accurate numerical method for the application of Vertical-Axis Wind Turbine (VAWT).}
+        \item {\textbf{Advisor}: Dr. ir. Carlos Sim\~ao Ferreira}
+        \item {Development of a high-performance numerical method in python with Cython and GPU (CUDA) acceleration.}
+      \end{cvitems}
+    }
+
+  \cventry
+    {B.Sc in Aerospace Engineering} % Degree
+    {TU Delft (Delft University of Technology)} % Institution
+    {Delft, The Netherlands} % Location
+    {Sep. 2008 - Aug. 2011} % Date(s)
+    {
+      \begin{cvitems} % Description(s) bullet points
+        \item {\textbf{Minor}: Wind Energy and Sustainability}
+        \item {\textbf{Thesis}: Designing a multi-purpose autonomous aerial monitoring aircraft.}
+        \item {Design a UAV that can cope with severe weather conditions, while performing a variety of sensing and monitoring tasks.}
+      \end{cvitems}
+    }
+
+\end{cventries}
+
+
+%===========================================================================
+%===========================================================================
+%   EXTRACURRICULAR ACTIVITIES
+%===========================================================================
+%===========================================================================
+
+\cvsection{Extracurricular Activities}
+
+\begin{cventries}
+
+  \cventry
+    {Editor} % Degree
+    {Leonardo Times Magazine} % Institution
+    {Delft, The Netherlands} % Location
+    {Sep. 2011 - Aug. 2012} % Date(s)
+    {
+      \begin{cvitems} % Description(s) bullet points
+        \item {Journal of the Society for Aerospace Engineering students, the VSV \textit{Leonardo da Vinci} at the Delft University of Technology.}
+        \item {In charge of current affairs section.}
+      \end{cvitems}
+    }
+
+  \cventry
+    {Powertrain Engineer} % Degree
+    {TU Delft Formula Student} % Institution
+    {Delft, The Netherlands} % Location
+    {Sep. 2009 - Jul. 2010} % Date(s)
+    {
+      \begin{cvitems} % Description(s) bullet points
+        \item {In charge of designing the powertrain intake system.}
+        \item {Design and production of the carbon-fiber intake system.}
+        \item {\textit{2010 Formula Student Germany Champion.}}
+      \end{cvitems}
+    }
+
+\end{cventries}
+
+
+%===========================================================================
+%===========================================================================
+%   COMPUTER SKILLS
+%===========================================================================
+%===========================================================================
+
+\cvsection{Skills}
+
+\begin{cvskills}
+  \cvskill
+    {CAD}
+    {Blender, CATIA}
+  \cvskill
+    {CFD}
+    {FEniCS, Fluent, OpenFOAM}
+  \cvskill
+    {DevOps}
+    {Ansible, AWS (EC2), TravisCI, Docker, Git, Grafana, Kubernetes, Nginx, Vagrant}
+  \cvskill
+    {Database}
+    {InfluxDB, MariaDB}
+  \cvskill
+    {Embedded Platform}
+    {Arduino, NVIDIA Jetson Nano, Raspberry Pi}
+  \cvskill
+    {Markup / Typesetting}
+    {Jinja, LaTeX, Markdown, Vim}
+  \cvskill
+    {ML Libraries}
+    {PyTorch, Scikit-learn}
+  \cvskill
+    {OS}
+    {Linux (RedHat, Debian), Mac, Windows}
+  \cvskill
+    {Programming}
+    {C++, MATLAB, Python, R, shell}
+  \cvskill
+    {Python Libraries}
+    {Cupy, Cython, Dask, H5py, Matplotlib, MPI4py, Numba, NumPy, Pandas, SciPy, Scikit-image}
+  \cvskill
+    {Web development} % Category
+    {CSS, Hugo, HTML5}
+\end{cvskills}
+
+\cvsection{Languages}
+
+\begin{cvskills}
+    \cvskill
+    {}
+    {\textbf{English} (Fluent), \textbf{German} (Conversational), \textbf{Malayalam} (Fluent), \textbf{Dutch} (Basic)}
+\end{cvskills}
+
+%===========================================================================
+%===========================================================================
+%   HONORS & AWARDS
+%===========================================================================
+%===========================================================================
+
+\cvsection{Honors \& Awards}
+
+\begin{cvhonors}
+
+  \cvhonor
+    {Outstanding Oral Presentation} % Award
+    {13th Symposium on Urban Environment} % Event
+    {Seattle, USA} % Location
+    {2017} % Date(s)
+  \cvhonor
+    {Young Researcher Best Researcher} % Award
+    {4th International Conference on Countermeasures to Urban Heat Island} % Event
+    {Singapore} % Location
+    {2016} % Date(s)
+\end{cvhonors}
+
+\end{document}
