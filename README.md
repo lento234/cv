@@ -1,58 +1,14 @@
----
-title: "CV"
-firstname: Lento
-surname: Manickathan
-website: https://manickathan.ch
-email: lento.manickathan@gmail.com
----
+<div align="center">
 
-# Profile
+# [CV](cv.pdf)
 
-Aerospace Engineer and PhD in mechanical engineering with expertise in high-performance computing and machine learning. A brief summary of skills:
+![CC BY 4.0](https://img.shields.io/github/license/lento234/lento234.github.io?style=flat-square&color=blue)
+![Last updated](https://img.shields.io/github/last-commit/lento234/cv)
 
-* CFD simulation with `OpenFOAM`
-* PIV experimental skills
-* Machine learning with `PyTorch`
-* Cloud computing, GPU computing
-* Programming in `Python`
-* Administration of HPC system
+***CV hosted at `github`***
 
-# Technical skills
+</div>
 
-## Scientific
+# Description
 
- * **CAD**: CATIA
- * **CFD**: OpenFOAM, FEniCS, Fluent
- * **HPC libraries**: h5py, dask, cython, numba, cupy, mpi4py
- * **ML libraries**: PyTorch, scikit-learn
- * **Programming**: Python, C/C++, MATLAB
- * **Scientific libraries**: NumPy, SciPy, Matplotlib, pandas, scikit-image
-
-## Administrator
-
- * **Automation**: Ansible
- * **Cloud**: Amazon AWS (EC2)
- * **Container**: Docker, Sarus
- * **CI/CD**: Git (Github, Gitlab), Travis CI
- * **Embedded**: Arduino, Raspberry Pi, NVIDIA Jetson Nano
- * **Graphics**: Blender, Photoshop
- * **HPC**: Slurm
- * **Remote**: ssh, nginx
- * **OS**: Linux (Ubuntu, Debian, Arch, CentOS), MacOS, Windows
-
-# Academic & professional experience
-
-Postdoctoral researcher at `Empa`
-: (June 2019 - Present), Zurich, Switzerland
-  * Application of machine learning in quantitative flow visualization.
-  * Supervised and unsupervised optical flow algorithms for PIV.
-  * Convolutional Neural Networks (CNN) in PyTorch.
-  * Additional responsibilities: Deputy Laser safety officer (LSO), deputy data management, Lab HPC support, and fluid tunnel support.
-
-Scientific Assistant at `ETH Zurich`
-
-: (May 2015 - May 2019), Zurich, Switzerland
-  * Numerical and experimental research at Empa.
-  * Neutron radiography at Paul Scherrer Institut (PSI).
-  * Teaching assistant for Application of CFD in buildings.
-  * Supervision of master thesis project: Praharsh Pai Raikar
+Made with :heart: using [Awesome-CV](https://github.com/posquit0/Awesome-CV), [Nord](https://www.nordtheme.com/) theme, and [Fira Sans](https://fonts.google.com/specimen/Fira+Sans) font.
