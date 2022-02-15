@@ -81,11 +81,11 @@
 \RequirePackage{parskip}
 % Needed to deal hyperlink
 \RequirePackage[hidelinks,unicode]{hyperref}
-\hypersetup{%
-  pdftitle={},
-  pdfauthor={},
-  pdfsubject={},
-  pdfkeywords={}
+\hypersetup{
+  pdftitle={Curriculum Vitae},
+  pdfauthor={Lento Manickathan},
+  % pdfsubject={{\pdftitlesubject}},
+  pdfkeywords={CV}
 }
 
 
