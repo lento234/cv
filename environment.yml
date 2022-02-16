@@ -1,9 +1,0 @@
-channels:
-  - conda-forge
-name: cv
-dependencies:
-  - pip
-  - python=3
-  - just
-  - pip:
-    - pre-commit
