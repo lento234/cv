@@ -19,7 +19,3 @@ jobs:
 
       - name: Compile using xelatex
         run: make cv
-
-      - uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: Build PDFs
