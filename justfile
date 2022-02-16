@@ -7,8 +7,8 @@ FILENAME := "cv"
 help:
     @just --list
 
-# Build using docker image
-build:
+# Make all pdfs usings docker image
+make:
 	@mkdir -p {{ EXPORT_DIR }}
 	docker run --rm \
 	--user $(id -u):$(id -g) \
