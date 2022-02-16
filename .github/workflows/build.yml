@@ -12,7 +12,7 @@ jobs:
     name: Build CV
     runs-on: ubuntu-latest
     container: mrlento234/xelatex
-    
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
@@ -20,6 +20,11 @@ jobs:
       - name: Compile using xelatex
         run: make cv
 
+  commit:
+    name: Commit build
+    runs-on: ubuntu-latest
+
+    steps:
       - name: Git commit and push
         run: |
           git config user.email 'actions@github.com'
