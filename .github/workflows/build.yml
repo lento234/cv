@@ -1,0 +1,27 @@
+name: Build
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build CV
+    runs-on: ubuntu-latest
+    container: mrlento234/xelatex
+    
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Compile CV using xelatex
+        run: xelatex cv.tex
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: cv.pdf
+          path: cv.pdf
