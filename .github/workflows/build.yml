@@ -9,8 +9,9 @@ on:
 
 jobs:
   build:
-    name: Compile pdfs
+    name: Build all pdfs
     runs-on: ubuntu-latest
+    container: mrlento234/xelatex
     
     steps:
       - name: Checkout repo
@@ -26,7 +27,8 @@ jobs:
           path: cv.pdf
 
   commit:
-    name: Commit changes
+    name: Commit pdfs to branch
+    needs: build
     runs-on: ubuntu-latest
 
     steps:
