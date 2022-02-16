@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-    name: Build all pdfs
+    name: Build CV
     runs-on: ubuntu-latest
     container: mrlento234/xelatex
     
@@ -17,22 +17,11 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2
 
-      - name: Compile cv
+      - name: Compile CV using xelatex
         run: xelatex cv.tex
 
-      - name: Upload pdfs
+      - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
           name: cv.pdf
           path: cv.pdf
-
-  commit:
-    name: Commit pdfs to branch
-    needs: build
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Commit pdf to repo
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: Apply changes
