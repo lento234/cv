@@ -11,17 +11,16 @@ jobs:
   build:
     name: Compile pdfs
     runs-on: ubuntu-latest
-    container: mrlento234/xelatex
-
+    
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
 
       - name: Compile cv
+        container: mrlento234/xelatex
         run: xelatex cv.tex
 
       - name: Commit pdf to repo
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Apply changes
-          push_options: --force
