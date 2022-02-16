@@ -1,11 +1,12 @@
 <div align="center">
 
-# [Curriculum Vitae](cv.pdf)
+# Curriculum Vitae
 
-![CC BY 4.0](https://img.shields.io/github/license/lento234/lento234.github.io?style=flat-square&color=blue)
-![Last updated](https://img.shields.io/github/last-commit/lento234/cv)
+![Build](https://img.shields.io/github/workflow/status/lento234/cv/Build?label=Links&style=flat-square&labelColor=000000)
+![License](https://img.shields.io/github/license/lento234/cv?style=flat-square&color=blue&labelColor=000000)
+![Last updated](https://img.shields.io/github/last-commit/lento234/cv?style=flat-square&labelColor=000000)
 
-***Personal CV***
+[![CV](https://img.shields.io/badge/-CV%20(PDF)-blue?style=flat-square)](cv.pdf)
 
 </div>
 
