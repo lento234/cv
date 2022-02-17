@@ -8,6 +8,10 @@
 % Claud D. Park <posquit0.bj@gmail.com>
 % http://www.posquit0.com
 %
+% Modified by:
+% Lento Manickathan <lento.manickathan@gmail.com>
+% https://manickathan.ch
+%
 % Notes:
 % 1) This class file defines the structure and layout of the template file (cv.tex, resume.tex).
 % 2) It has been written in such a way that under most circumstances you
@@ -502,7 +506,7 @@
         {}%
         {%
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-          \href{http://\@homepage}{\faHome\acvHeaderIconSep\@homepage}%
+          \href{https://\@homepage}{\faHome\acvHeaderIconSep\@homepage}%
         }%
       \ifthenelse{\isundefined{\@github}}%
         {}%
