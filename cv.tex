@@ -32,7 +32,7 @@
 
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
-\newcommand{\sep}{$\cdot$~}
+\newcommand{\sep}{\(\cdot\)~}
 
 %===============================================================================
 %   PERSONAL INFORMATION
@@ -102,6 +102,8 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
 \end{cventries}
 
 \end{cvparagraph}
+
+\vspace{4mm}
 
 %===========================================================================
 %   ACADEMIC & PROFESSIONAL EXPERIENCE
@@ -248,49 +250,80 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
 
 \cvsection{Skills}
 
-\begin{cvskills}
-  \cvskill
-    {CAD}
-    {Blender \sep CATIA}
-  \cvskill
-    {CFD}
-    {FEniCS \sep Fluent \sep OpenFOAM}
-  \cvskill
-    {DevOps}
-    {Ansible \sep AWS (EC2) \sep Docker \sep Git \sep Grafana \sep Kubernetes \sep Travis CI \sep Vagrant}
-  \cvskill
-    {Database}
-    {InfluxDB \sep MariaDB}
-  \cvskill
-    {Embedded Platform}
-    {Arduino \sep NVIDIA Jetson Nano \sep Raspberry Pi}
-  \cvskill
-    {Markup / Typesetting}
-    {Jinja \sep LaTeX \sep Markdown \sep MkDocs \sep Vim}
-  \cvskill
-    {ML Libraries}
-    {PyTorch \sep Scikit-learn}
-  \cvskill
-    {OS}
-    {Linux (Arch Linux, Debian, Red Hat) \sep MacOS \sep Windows}
-  \cvskill
-    {Programming}
-    {C++ \sep MATLAB \sep Python \sep R \sep Shell}
-  \cvskill
-    {Python Libraries}
-    {CuPy \sep Cython \sep Dask \sep H5py \sep Matplotlib \sep MPI4py \sep Numba \sep NumPy \sep Pandas \sep SciPy \sep Scikit-image}
-  \cvskill
-    {Web development} % Category
-    {CSS \sep Hugo \sep HTML5 \sep Nginx}
-\end{cvskills}
+% \textbf{Scientific programming} % Title
+
+\cvsubsubsection{Scientific Programming}
+
+  \begin{cvskills}
+    \cvskill
+      {CAD}
+      {Blender \sep CATIA}
+    \cvskill
+      {CFD}
+      {FEniCS \sep Fluent \sep OpenFOAM}
+    \cvskill
+      {Programming}
+      {C++ \sep MATLAB \sep Python \sep R \sep Shell}
+    \cvskill
+      {Python Libraries (HPC)}
+      {CuPy \sep Cython \sep Dask \sep H5py \sep MPI4py \sep Numba \sep NumPy \sep Pandas \sep SciPy}
+    \cvskill
+      {Python Libraries (ML)}
+      {PyTorch \sep Scikit-learn}
+    \cvskill
+      {Python Libraries (Plotting)}
+      {Dash \sep Matplotlib \sep Scikit-image}
+  \end{cvskills}
+
+\cvsubsubsection{Software Development}
+
+  \begin{cvskills}
+
+    \cvskill
+      {Automation}
+      {Ansible}
+    \cvskill
+      {CI / CD}
+      {Git (GitHub, Gitlab) \sep Travis CI}
+    \cvskill
+      {Cloud}
+      {Amazon AWS (EC2)}
+    \cvskill
+      {Container}
+      {Docker \sep Kubernetes \sep Sarus \sep Vagrant}
+    \cvskill
+      {Database}
+      {InfluxDB \sep MariaDB}
+    \cvskill
+      {Embedded}
+      {Arduino \sep Raspberry Pi \sep NVIDIA Jetson Nano}
+    \cvskill
+      {HPC}
+      {SLURM}
+    \cvskill
+      {Markup / Typesetting}
+      {Jinja \sep LaTeX \sep Markdown \sep MkDocs \sep Vim}
+    \cvskill
+      {ML Libraries}
+      {PyTorch \sep Scikit-learn}
+    \cvskill
+      {OS}
+      {Linux (Debian, Red Hat) \sep MacOS \sep Windows}
+    \cvskill
+      {Web}
+      {CSS \sep HTML5 \sep Nginx}
+  \end{cvskills}
+
+%===========================================================================
+%   LANGUAGES
+%===========================================================================
 
 \cvsection{Languages}
 
-\begin{cvskills}
-    \cvskill
-    {}
-    {\textbf{English} (Fluent), \textbf{German} (Conversational), \textbf{Malayalam} (Fluent), \textbf{Dutch} (Basic)}
-\end{cvskills}
+  \begin{cvlanguages}
+      \cvlanguage
+      {\textbf{English} (Fluent), \textbf{German} (Conversational), \textbf{Malayalam} (Fluent), \textbf{Dutch} (Basic)}
+  \end{cvlanguages}
 
 %===========================================================================
 %   HONORS & AWARDS
@@ -317,6 +350,8 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
 %   PUBLICATIONS
 %===========================================================================
 
+\newpage
+
 \cvsection{Publications}
 
 \begin{cventries}
@@ -340,15 +375,15 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
     \end{cvitems}
   }
 
-  % \pubentry
-  % {Conferences}
-  % {
-  %   \begin{cvitems}
-  %     \item {\textbf{Manickathan, L.}, Kubilay, A., Defraeye, T., Allegrini, J., Derome, D., \& Carmeliet, J.: Integrated CFD vegetation model with soil-plant-air water dynamics for studying the cooling potential of vegetation in an urban street canyon. {\bodyfontlight\textit{10th International Conference on Urban Climate/14th Symposium on the Urban Environment}, New York, NY, USA, 6 - 10 August 2018.}}
-  %     \item {\textbf{Manickathan, L.}, Defraeye, T., Allegrini, J., Derome D., \& Carmeliet, J.: Conjugate Vegetation Model for Evaluating Evapotranspirative Cooling in Urban Environment. {\bodyfontlight\textit{97th AMS Annual Meeting}, Seattle, WA, USA, 2017.}}
-  %     \item {\textbf{Manickathan, L.}, Defraeye, T., Allegrini, J., Derome, D., \& Carmeliet, J.: Aerodynamic characterization of model vegetation by wind tunnel experiments. {\bodyfontlight\textit{4th International Conference on Countermeasures to Urban Heat Island}, Singapore, 2016.}}
-  %   \end{cvitems}
-  % }
+  \pubentry
+  {Conferences}
+  {
+    \begin{cvitems}
+      \item {\textbf{Manickathan, L.}, Kubilay, A., Defraeye, T., Allegrini, J., Derome, D., \& Carmeliet, J.: Integrated CFD vegetation model with soil-plant-air water dynamics for studying the cooling potential of vegetation in an urban street canyon. {\bodyfontlight\textit{10th International Conference on Urban Climate/14th Symposium on the Urban Environment}, New York, NY, USA, 6 - 10 August 2018.}}
+      \item {\textbf{Manickathan, L.}, Defraeye, T., Allegrini, J., Derome D., \& Carmeliet, J.: Conjugate Vegetation Model for Evaluating Evapotranspirative Cooling in Urban Environment. {\bodyfontlight\textit{97th AMS Annual Meeting}, Seattle, WA, USA, 2017.}}
+      \item {\textbf{Manickathan, L.}, Defraeye, T., Allegrini, J., Derome, D., \& Carmeliet, J.: Aerodynamic characterization of model vegetation by wind tunnel experiments. {\bodyfontlight\textit{4th International Conference on Countermeasures to Urban Heat Island}, Singapore, 2016.}}
+    \end{cvitems}
+  }
 
 \end{cventries}
 

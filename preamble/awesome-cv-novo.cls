@@ -201,6 +201,7 @@
 \newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lighttext} #1}}
 \newcommand*{\sectionstyle}[1]{{\fontsize{16pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
 \newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
+\newcommand*{\subsubsectionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\textcolor{text}{#1}}}
 \newcommand*{\paragraphstyle}{\fontsize{9pt}{1em}\bodyfont\upshape\color{text}}
 
 % For elements of entry
@@ -641,6 +642,13 @@
   \phantomsection
 }
 
+\newcommand{\cvsubsubsection}[1]{%
+  \vspace{\acvSectionContentTopSkip}
+  \vspace{-3mm}
+  \entrypositionstyle{#1}
+  \phantomsection
+}
+
 % Define a paragraph for CV
 \newenvironment{cvparagraph}{%
   \vspace{\acvSectionContentTopSkip}
@@ -735,7 +743,7 @@
   \begin{center}
     \setlength\tabcolsep{1ex}
     \setlength{\extrarowheight}{0pt}
-    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} r L{\textwidth * \real{0.9}}}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} R{\textwidth * \real{0.25}} L{\textwidth * \real{0.9}}}
 }{%
     \end{tabular*}
   \end{center}
@@ -745,6 +753,26 @@
 \newcommand*{\cvskill}[2]{%
 	\skilltypestyle{#1} & \skillsetstyle{#2} \\
 }
+
+
+% Define an environment for cvlanguages
+\newenvironment{cvlanguages}{%
+  \vspace{\acvSectionContentTopSkip}
+  \vspace{-2.0mm}
+  \begin{center}
+    \setlength\tabcolsep{1ex}
+    \setlength{\extrarowheight}{0pt}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l}
+}{%
+    \end{tabular*}
+  \end{center}
+}
+% Usage: \cvskill{<type>}{<skillset>}
+\newcommand*{\cvlanguage}[1]{%
+	\skillsetstyle{#1} \\
+}
+
+
 
 % Define an environment for cvitems(for cventry)
 \newenvironment{cvitems}{%
