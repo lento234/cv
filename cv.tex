@@ -32,7 +32,7 @@
 
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
-\newcommand{\sep}{\(\cdot\)~}
+\newcommand{\sep}{\cdotp~}
 
 %===============================================================================
 %   PERSONAL INFORMATION
@@ -42,7 +42,7 @@
 % \photo[rectangle,edge,right]{./examples/profile}
 \photo[circle,edge,right]{profile.png}
 \name{Lento}{Manickathan}
-\position{Postdoctoral Researcher{\enskip\cdotp\enskip}Aerospace Engineer}
+\position{Aerospace Engineer{\enskip\cdotp\enskip}Postdoctoral Researcher}
 \address{Geissbergstrasse 22, 8200 Schaffhausen, Switzerland}
 
 \mobile{(+41) 78 917 8121}
@@ -52,16 +52,15 @@
 % \linkedin{lento-manickathan}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
-% \twitter{@twit}
+% \twitter{@mrlento234}
 % \skype{skype-id}
 % \reddit{reddit-id}
 % \medium{madium-id}
-% \googlescholar{b8RcAAAAJ}{Google Scholar}
+% \googlescholar{b8RcAAAAJ}{}
 %% \firstname and \lastname will be used
-% \googlescholar{googlescholar-id}{}
 \extrainfo{Ausweis C}
 
-% \quote{``Be the change that you want to see in the world."}
+% \quote{``There is nothing more permanent than a temporary solution."}
 
 
 %-------------------------------------------------------------------------------
@@ -74,9 +73,10 @@
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
-  {\today}
-  {Lento Manickathan}
-  %   {Lento Manickathan~~~·~~~CV}
+  % {\today}
+  % {Lento Manickathan}
+  {Lento Manickathan\enskip|\enskip CV}
+  {}
   {\thepage}
 
 
@@ -92,12 +92,12 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
 
 \begin{cventries}
     \begin{cvitems}
-        \item {CFD simulation with OpenFOAM}
-        \item {PIV experimental skills}
-        \item {Machine learning with PyTorch}
-        \item {Cloud computing, GPU computing}
-        \item {Programming in Python}
-        \item {Administration of HPC system}
+      \item {HPC programming in Python.}
+      \item {Machine learning with PyTorch.}
+      \item {CFD simulation with OpenFOAM.}
+      \item {PIV experimental skills.}
+      \item {Cloud computing, GPU computing.}
+      \item {Administration of HPC system.}
     \end{cvitems}
 \end{cventries}
 
@@ -148,7 +148,7 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
     {Sep. 2012 - Feb. 2013}
     {
       \begin{cvitems}
-        \item {Investigating the combustion of hydrogen rich Syngas fuel in gas turbine.}
+        \item {Investigating the combustion of hydrogen-rich Syngas fuel in gas turbine.}
       \end{cvitems}
     }
 
@@ -174,7 +174,7 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
         \item {\textbf{Advisor}: Prof. Dr. Jan Carmeliet}
         \item {Development of a coupled soil-vegetation-air-radiation model in C++ within the OpenFOAM library.}
         \item {Wind tunnel study of flow past model and natural plants using PIV.}
-        \item {X-ray tomography of small natural plants and high-performance big data analysis in python (HDF5, scikit-image, Dask, Numba).}
+        \item {X-ray tomography of small natural plants and high-performance big data analysis in python (Dask, HDF5, Numba, Scikit-image).}
       \end{cvitems}
     }
 
@@ -201,7 +201,7 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
       \begin{cvitems}
         \item {\textbf{Minor}: Wind Energy and Sustainability}
         \item {\textbf{Thesis}: Designing a multi-purpose autonomous aerial monitoring aircraft.}
-        \item {Design a UAV that can cope with severe weather conditions, while performing a variety of sensing and monitoring tasks.}
+        \item {Design a UAV that can cope with severe weather conditions while performing a variety of sensing and monitoring tasks.}
       \end{cvitems}
     }
 
@@ -223,8 +223,8 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
     {Sep. 2011 - Aug. 2012} % Date(s)
     {
       \begin{cvitems} % Description(s) bullet points
-        \item {Journal of the Society for Aerospace Engineering students, the VSV \textit{Leonardo da Vinci} at the Delft University of Technology.}
-        \item {In charge of current affairs section.}
+        \item {Journal of the Society for Aerospace Engineering students, the VSV \textit{Leonardo da Vinci} at the TU Delft.}
+        \item {In charge of \textit{Current Affairs} section.}
       \end{cvitems}
     }
 
@@ -335,13 +335,13 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
 
   \cvhonor
     {Outstanding Oral Presentation} % Award
-    {13th Symposium on Urban Environment} % Event
+    {13\textsuperscript{th} Symposium on Urban Environment} % Event
     {Seattle, USA} % Location
     {2017} % Date(s)
 
     \cvhonor
     {Young Best Researcher} % Award
-    {4th International Conference on Countermeasures to Urban Heat Island} % Event
+    {4\textsuperscript{th} International Conference on Countermeasures to Urban Heat Island} % Event
     {Singapore} % Location
     {2016} % Date(s)
 \end{cvhonors}
@@ -361,7 +361,7 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
   {
     \begin{cvitems}
       \item {\textbf{Manickathan, L.}, Mucignat, C., Lunati, I. (2022). Random displacement training for fluid flow motion estimation. {\bodyfontlight(\textit{in preparation})}}
-      \item {\textbf{Manickathan, L.}, Defraeye, T., Carl, S., Richter, H., Allegrini, J., Derome, D., \& Carmeliet, J. (2022). A study on diurnal microclimate hysteresis and plant morphology of a Buxus sempervirens using PIV, infrared thermography, and X-ray imaging. {\bodyfontlight\textit{Agricultural and Forest Meteorology 313}, 108722.}}
+      \item {\textbf{Manickathan, L.}, Defraeye, T., Carl, S., Richter, H., Allegrini, J., Derome, D., \& Carmeliet, J. (2022). A study on diurnal microclimate hysteresis and plant morphology of a \textit{Buxus sempervirens} using PIV, infrared thermography, and X-ray imaging. {\bodyfontlight\textit{Agricultural and Forest Meteorology 313}, 108722.}}
       \item {\textbf{Manickathan, L.}, Defraeye, T., Allegrini, J., Derome, D., \& Carmeliet, J. (2018). Parametric study of the influence of environmental factors and tree properties on the transpirative cooling effect of trees. {\bodyfontlight\textit{Agricultural and Forest Meteorology, 248}, 259-274.}}
       \item {\textbf{Manickathan, L.}, Defraeye, T., Allegrini, J., Derome, D., \& Carmeliet, J. (2018). Comparative study of flow field and drag coefficient of model and small natural trees in a wind tunnel. {\bodyfontlight\textit{Urban Forestry \& Urban Greening, 35}, 230–239.}}
     \end{cvitems}
