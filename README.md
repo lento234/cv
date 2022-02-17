@@ -13,3 +13,39 @@
 # Description
 
 Made with :heart: using [Awesome-CV](https://github.com/posquit0/Awesome-CV), [Nord](https://www.nordtheme.com/) theme, and [Fira Sans](https://fonts.google.com/specimen/Fira+Sans) font.
+
+# Setup guide
+
+## Requirements
+
+* **Recommended**: `docker` (`mrlento234/xelatex`).
+* Alternatively, xelatex: (`texlive, texlive-fonts-extra, texlive-fonts-recommended, texlive-lang-english, texlive-lang-german, texlive-science`).
+
+
+## Install conda environment
+
+```
+conda env create -f environment.yml
+```
+## Compile latex files
+
+**Print all options**
+
+```
+$ make
+all        Build all latex files using docker
+clean      Clean up
+cv         Compile CV
+open       Open CV pdf
+```
+
+**Make CV using docker**
+
+```
+make all
+```
+
+# References
+
+* [Awesome-CV](https://github.com/posquit0/Awesome-CV) - Awesome CV is LaTeX template for your outstanding job application
+* [Nord theme](https://www.nordtheme.com/) - An arctic, north-bluish color palette.
