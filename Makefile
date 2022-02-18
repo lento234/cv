@@ -3,14 +3,15 @@ DOCKERIMAGE=mrlento234/xelatex
 
 PHONY: help
 help:
-	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-10s\033[0m %s\n", $$1, $$2}'
+	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'
+
 
 all: ## Build all latex files using docker
 	docker run --rm \
-	--user $(id -u):$(id -g) \
-	-i -w "/doc" \
-	-v "$(PWD)":/doc \
-	$(DOCKERIMAGE) make cv
+	--user="$(shell id -u):$(shell id -g)" \
+	-i -w /doc \
+	-v $(PWD):/doc \
+	$(DOCKERIMAGE) make cv clean
 
 
 cv: ## Compile CV
@@ -19,10 +20,14 @@ cv: ## Compile CV
 	@mv -vf build/cv.pdf .
 
 
-.PHONY: clean
 clean: ## Clean up
 	@rm -rf build
+
+
+.PHONY: purge
+purge: clean  ## Purge all files
 	@rm -vf cv.pdf
+
 
 .PHONY: install-apt-deps
 install-apt-deps: ## Install dependencies
