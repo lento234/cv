@@ -24,6 +24,19 @@ clean: ## Clean up
 	@rm -rf build
 	@rm -vf cv.pdf
 
+.PHONY: install-apt-deps
+install-apt-deps: ## Install dependencies
+	@sudo apt update
+	@sudo apt install -y \
+		texlive \
+		texlive-base \
+		texlive-fonts-extra \
+		texlive-fonts-recommended \
+		texlive-lang-english \
+		texlive-lang-german \
+		texlive-science \
+		texlive-xetex
+
 
 .PHONY: open
 open: ## Open CV pdf

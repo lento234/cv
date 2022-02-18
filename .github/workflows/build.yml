@@ -19,15 +19,7 @@ jobs:
           lfs: true
 
       - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt install -y \
-            texlive \
-            texlive-fonts-extra \
-            texlive-fonts-recommended \
-            texlive-lang-english \
-            texlive-lang-german \
-            texlive-science
+        run: make install-apt-deps
 
       - name: Compile using xelatex
         run: make cv
