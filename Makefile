@@ -1,5 +1,6 @@
-CC=xelatex
-DOCKERIMAGE=mrlento234/xelatex
+CC = xelatex
+DOCKERIMAGE = mrlento234/xelatex
+FILES = cv coverletter
 
 PHONY: help
 help:
@@ -11,7 +12,7 @@ all: ## Build all latex files using docker
 	--user="$(shell id -u):$(shell id -g)" \
 	-i -w /doc \
 	-v $(PWD):/doc \
-	$(DOCKERIMAGE) make cv clean
+	$(DOCKERIMAGE) make $(FILES) clean
 
 
 cv: ## Compile CV
@@ -20,13 +21,19 @@ cv: ## Compile CV
 	@mv -vf build/cv.pdf .
 
 
+coverletter: ## Compile Cover Letter
+	@mkdir -p build
+	$(CC) -output-directory=build coverletter.tex
+	@mv -vf build/coverletter.pdf .
+
+
 clean: ## Clean up
 	@rm -rf build
 
 
 .PHONY: purge
 purge: clean  ## Purge all files
-	@rm -vf cv.pdf
+	@rm -vf cv.pdf coverletter.pdf
 
 
 .PHONY: install-apt-deps
@@ -46,3 +53,7 @@ install-apt-deps: ## Install dependencies
 .PHONY: open
 open: ## Open CV pdf
 	@xdg-open cv.pdf
+
+.PHONY: open-coverletter
+open-coverletter: ## Open CV pdf
+	@xdg-open coverletter.pdf
