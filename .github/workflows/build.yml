@@ -11,11 +11,35 @@ jobs:
   build:
     name: Build CV
     runs-on: ubuntu-latest
-    container: mrlento234/xelatex
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
+        with:
+          lfs: true
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt install -y \
+            texlive \
+            texlive-fonts-extra \
+            texlive-fonts-recommended \
+            texlive-lang-english \
+            texlive-lang-german \
+            texlive-science
 
       - name: Compile using xelatex
         run: make cv
+
+      - name: Commit update
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -m "Update submodules" -a
+
+      - name: Push commit
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
