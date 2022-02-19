@@ -32,10 +32,14 @@ conda env create -f environment.yml
 
 ```
 $ make
-all        Build all latex files using docker
-clean      Clean up
-cv         Compile CV
-open       Open CV pdf
+all                  Build all latex files using docker
+clean                Clean up
+coverletter          Compile Cover Letter
+cv                   Compile CV
+install-apt-deps     Install dependencies
+open-coverletter     Open CV pdf
+open                 Open CV pdf
+purge                Purge all file
 ```
 
 **Make CV using docker**
