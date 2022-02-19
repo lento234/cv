@@ -17,27 +17,6 @@
 % Configure page margins with geometry
 \geometry{left=2cm, top=2cm, right=2cm, bottom=2cm, footskip=.5cm}
 
-% Color for highlights
-% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
-%                 awesome-nephritis, awesome-concrete, awesome-darknight
-% \colorlet{awesome}{awesome-skyblue}
-% Uncomment if you would like to specify your own color
-\definecolor{awesome}{HTML}{5e81ac}
-
-% Colors for text
-% Uncomment if you would like to specify your own color
-\definecolor{darktext}{HTML}{2e3440}
-% \definecolor{text}{HTML}{3b4252}
-% \definecolor{graytext}{HTML}{2e3440}
-% \definecolor{lighttext}{HTML}{4c566a}
-
-% Set false if you don't want to highlight section with awesome color
-\setbool{acvSectionColorHighlight}{true}
-
-% If you would like to change the social information separator from a pipe (|) to something else
-\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
-\newcommand{\sep}{\cdotp~}
-
 %===============================================================================
 %   PERSONAL INFORMATION
 %===============================================================================
@@ -80,7 +59,7 @@
 \makecvfooter
   % {\today}
   % {Lento Manickathan}
-  {Lento Manickathan\enskip|\enskip CV}
+  {Lento Manickathan\enskip\textbar\enskip CV}
   {}
   {\thepage}
 
@@ -360,32 +339,48 @@ Aerospace Engineer with interests in high-performance computing, machine learnin
 
 \begin{cventries}
 
-  \pubentry
+  \cvpubentry
   {Journals} % Title
   {
     \begin{cvitems}
-      \item {\textbf{Manickathan, L.}, Mucignat, C., Lunati, I. (2022). Random displacement training for fluid flow motion estimation. {\bodyfontlight(\textit{in preparation})}}
-      \item {\textbf{Manickathan, L.}, Defraeye, T., Carl, S., Richter, H., Allegrini, J., Derome, D., \& Carmeliet, J. (2022). A study on diurnal microclimate hysteresis and plant morphology of a \textit{Buxus sempervirens} using PIV, infrared thermography, and X-ray imaging. {\bodyfontlight\textit{Agricultural and Forest Meteorology 313}, 108722.}}
-      \item {\textbf{Manickathan, L.}, Defraeye, T., Allegrini, J., Derome, D., \& Carmeliet, J. (2018). Parametric study of the influence of environmental factors and tree properties on the transpirative cooling effect of trees. {\bodyfontlight\textit{Agricultural and Forest Meteorology, 248}, 259-274.}}
-      \item {\textbf{Manickathan, L.}, Defraeye, T., Allegrini, J., Derome, D., \& Carmeliet, J. (2018). Comparative study of flow field and drag coefficient of model and small natural trees in a wind tunnel. {\bodyfontlight\textit{Urban Forestry \& Urban Greening, 35}, 230–239.}}
+      \item {\textbf{Manickathan, L.}, Mucignat, C., Lunati, I. (2022). Random displacement training for fluid flow 
+             motion estimation. {\bodyfontlight(\textit{in preparation})}}
+      \item {\textbf{Manickathan, L.}, Defraeye, T., Carl, S., Richter, H., Allegrini, J., Derome, D., \& Carmeliet,
+             J. (2022). A study on diurnal microclimate hysteresis and plant morphology of a \textit{Buxus 
+             sempervirens} using PIV, infrared thermography, and X-ray imaging. {\bodyfontlight\textit{Agricultural
+             and Forest Meteorology 313}, 108722.}}
+      \item {\textbf{Manickathan, L.}, Defraeye, T., Allegrini, J., Derome, D., \& Carmeliet, J. (2018). Parametric 
+             study of the influence of environmental factors and tree properties on the transpirative cooling 
+             effect of trees. {\bodyfontlight\textit{Agricultural and Forest Meteorology, 248}, 259-274.}}
+      \item {\textbf{Manickathan, L.}, Defraeye, T., Allegrini, J., Derome, D., \& Carmeliet, J. (2018). 
+             Comparative study of flow field and drag coefficient of model and small natural trees in a wind tunnel.
+             {\bodyfontlight\textit{Urban Forestry \& Urban Greening, 35}, 230–239.}}
     \end{cvitems}
   }
 
-  \pubentry
+  \cvpubentry
   {Preprints}
   {
     \begin{cvitems}
-      \item {Palha, A., \textbf{Manickathan, L.}, Ferreira, C. S., \& van Bussel, G. (2015). A hybrid Eulerian-Lagrangian flow solver. {\bodyfontlight\textit{arXiv preprint arXiv:1505.03368.}}}
+      \item {Palha, A., \textbf{Manickathan, L.}, Ferreira, C. S., \& van Bussel, G. (2015). A hybrid 
+             Eulerian-Lagrangian flow solver. {\bodyfontlight\textit{arXiv preprint arXiv:1505.03368.}}}
     \end{cvitems}
   }
 
-  \pubentry
+  \cvpubentry
   {Conferences}
   {
     \begin{cvitems}
-      \item {\textbf{Manickathan, L.}, Kubilay, A., Defraeye, T., Allegrini, J., Derome, D., \& Carmeliet, J.: Integrated CFD vegetation model with soil-plant-air water dynamics for studying the cooling potential of vegetation in an urban street canyon. {\bodyfontlight\textit{10th International Conference on Urban Climate/14th Symposium on the Urban Environment}, New York, NY, USA, 6 - 10 August 2018.}}
-      \item {\textbf{Manickathan, L.}, Defraeye, T., Allegrini, J., Derome D., \& Carmeliet, J.: Conjugate Vegetation Model for Evaluating Evapotranspirative Cooling in Urban Environment. {\bodyfontlight\textit{97th AMS Annual Meeting}, Seattle, WA, USA, 2017.}}
-      \item {\textbf{Manickathan, L.}, Defraeye, T., Allegrini, J., Derome, D., \& Carmeliet, J.: Aerodynamic characterization of model vegetation by wind tunnel experiments. {\bodyfontlight\textit{4th International Conference on Countermeasures to Urban Heat Island}, Singapore, 2016.}}
+      \item {\textbf{Manickathan, L.}, Kubilay, A., Defraeye, T., Allegrini, J., Derome, D., \& Carmeliet, J.
+             Integrated CFD vegetation model with soil-plant-air water dynamics for studying the cooling potential
+             of vegetation in an urban street canyon. {\bodyfontlight\textit{10th International Conference on 
+             Urban Climate/14th Symposium on the Urban Environment}, New York, NY, USA, 6 - 10 August 2018.}}
+      \item {\textbf{Manickathan, L.}, Defraeye, T., Allegrini, J., Derome D., \& Carmeliet, J. Conjugate 
+             Vegetation Model for Evaluating Evapotranspirative Cooling in Urban Environment. 
+             {\bodyfontlight\textit{97th AMS Annual Meeting}, Seattle, WA, USA, 2017.}}
+      \item {\textbf{Manickathan, L.}, Defraeye, T., Allegrini, J., Derome, D., \& Carmeliet, J. Aerodynamic 
+             characterization of model vegetation by wind tunnel experiments. {\bodyfontlight\textit{4th 
+             International Conference on Countermeasures to Urban Heat Island}, Singapore, 2016.}}
     \end{cvitems}
   }
 

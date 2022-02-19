@@ -155,6 +155,27 @@
   \ifbool{acvSectionColorHighlight}{{\color{awesome}#1#2#3}}{#1#2#3}%
 }
 
+% Custom designs
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+% \colorlet{awesome}{awesome-skyblue}
+% Uncomment if you would like to specify your own color
+\definecolor{awesome}{HTML}{5e81ac}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+\definecolor{darktext}{HTML}{2e3440}
+% \definecolor{text}{HTML}{3b4252}
+% \definecolor{graytext}{HTML}{2e3440}
+% \definecolor{lighttext}{HTML}{4c566a}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\newcommand{\sep}{\cdotp~}
+% \newcommand{\cvpub}
 
 %-------------------------------------------------------------------------------
 %                Configuration for fonts
@@ -679,14 +700,14 @@
 }
 
 % Usage: \cventry{<position>}{<title>}{<location>}{<date>}{<description>}
-\newcommand*{\pubentry}[2]{%
+\newcommand*{\cvpubentry}[2]{%
   \vspace{-2.0mm}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
     \ifempty{#1}
         {\\}
-        {\entrytitlestyle{#1} \\}
+        {\entrypositionstyle{#1} \\}
     \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#2}}
   \end{tabular*}%
 }
