@@ -51,9 +51,6 @@ install-apt-deps: ## Install dependencies
 
 
 .PHONY: open
-open: ## Open CV pdf
-	@xdg-open cv.pdf
+open: ## Open all pdf files
+	$(foreach var,$(FILES),xdg-open $(var).pdf;)
 
-.PHONY: open-coverletter
-open-coverletter: ## Open CV pdf
-	@xdg-open coverletter.pdf
