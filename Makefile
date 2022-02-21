@@ -33,7 +33,7 @@ clean: ## Clean up
 
 .PHONY: purge
 purge: clean  ## Purge all files
-	@rm -vf cv.pdf coverletter.pdf
+	@$(foreach var, $(FILES), rm -rv $(var).pdf;)
 
 
 .PHONY: install-apt-deps
@@ -52,4 +52,4 @@ install-apt-deps: ## Install dependencies
 
 .PHONY: open
 open: ## Open all pdf files
-	$(foreach var,$(FILES),xdg-open $(var).pdf;)
+	@$(foreach var, $(FILES), xdg-open $(var).pdf;)
