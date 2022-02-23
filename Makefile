@@ -1,6 +1,6 @@
 CC = xelatex
 DOCKERIMAGE = mrlento234/xelatex
-FILES = cv coverletter
+FILES = cv
 
 PHONY: help
 help:
