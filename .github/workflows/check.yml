@@ -8,13 +8,15 @@ jobs:
   build:
     name: Check CV
     runs-on: ubuntu-latest
-    container: mrlento234/xelatex
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
         with:
           lfs: true
+
+      - name: Install dependencies
+        run: make install-apt-deps
 
       - name: Compile using xelatex
         run: make cv
