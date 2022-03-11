@@ -4,7 +4,7 @@
 
 [![CV](https://img.shields.io/badge/-PDF-red.svg?style=for-the-badge&logoColor=white&labelColor=black&logo=adobe)](https://media.githubusercontent.com/media/lento234/cv/main/cv.pdf)
 
-![Build](https://img.shields.io/github/workflow/status/lento234/cv/Build?label=Links&style=flat-square&labelColor=000000)
+![Build](https://img.shields.io/github/workflow/status/lento234/cv/Build?label=Build&style=flat-square&labelColor=000000)
 ![License](https://img.shields.io/github/license/lento234/cv?style=flat-square&color=blue&labelColor=000000)
 ![Last updated](https://img.shields.io/github/last-commit/lento234/cv?style=flat-square&labelColor=000000)
 
