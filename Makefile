@@ -1,6 +1,6 @@
 CC = xelatex
 DOCKERIMAGE = mrlento234/xelatex
-FILES = cv
+FILES = cv cv-extended
 
 PHONY: help
 help:
@@ -19,6 +19,12 @@ cv: ## Compile CV
 	@mkdir -p build
 	$(CC) -output-directory=build cv.tex
 	@mv -vf build/cv.pdf .
+
+
+cv-extended: ## Compile CV-extended
+	@mkdir -p build
+	$(CC) -output-directory=build cv-extended.tex
+	@mv -vf build/cv-extended.pdf .	
 
 
 coverletter: ## Compile Cover Letter
