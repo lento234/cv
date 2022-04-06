@@ -8,13 +8,13 @@
 ![License](https://img.shields.io/github/license/lento234/cv?style=flat-square&color=blue&labelColor=000000)
 ![Last updated](https://img.shields.io/github/last-commit/lento234/cv?style=flat-square&labelColor=000000)
 
-
-
 </div>
 
 # Description
 
 Made with :heart: using [Awesome-CV](https://github.com/posquit0/Awesome-CV), [Nord](https://www.nordtheme.com/) theme, and [Fira Sans](https://fonts.google.com/specimen/Fira+Sans) font.
+
+* Link: [manickathan.ch/cv]()
 
 # Setup guide
 
