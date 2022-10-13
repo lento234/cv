@@ -10,7 +10,6 @@
 %
 % Modified by:
 % Lento Manickathan <lento.manickathan@gmail.com>
-% https://manickathan.ch
 %
 % Notes:
 % 1) This class file defines the structure and layout of the template file (cv.tex, resume.tex).

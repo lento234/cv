@@ -24,7 +24,7 @@ cv: ## Compile CV
 cv-extended: ## Compile CV-extended
 	@mkdir -p build
 	$(CC) -output-directory=build cv-extended.tex
-	@mv -vf build/cv-extended.pdf .	
+	@mv -vf build/cv-extended.pdf .
 
 
 coverletter: ## Compile Cover Letter
