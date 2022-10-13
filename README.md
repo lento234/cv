@@ -14,7 +14,7 @@
 
 Made with :heart: using [Awesome-CV](https://github.com/posquit0/Awesome-CV), [Nord](https://www.nordtheme.com/) theme, and [Fira Sans](https://fonts.google.com/specimen/Fira+Sans) font.
 
-* Link: [manickathan.ch/cv](https://manickathan.ch/cv)
+* Link: [lento234.ch/cv](https://lento234.ch/cv)
 
 # Setup guide
 
