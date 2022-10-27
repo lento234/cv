@@ -18,16 +18,9 @@ Made with :heart: using [Awesome-CV](https://github.com/posquit0/Awesome-CV), [N
 
 # Setup guide
 
-## Requirements
-
 * **Recommended**: `docker` (`mrlento234/xelatex`).
 * Alternatively, xelatex: (`texlive, texlive-base, texlive-fonts-extra, texlive-fonts-recommended, texlive-lang-english, texlive-lang-german, texlive-science, texlive-xetex`).
 
-## Install conda environment
-
-```
-conda env create -f environment.yml
-```
 ## Compile latex files
 
 **Print all options**
