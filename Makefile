@@ -58,4 +58,4 @@ install-apt-deps: ## Install dependencies
 
 .PHONY: open
 open: ## Open all pdf files
-	@$(foreach var, $(FILES), xdg-open $(var).pdf;)
+	@$(foreach var, $(FILES), open $(var).pdf;)
